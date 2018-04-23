@@ -21,6 +21,7 @@ def display(filename):
     print("{}: nous avons {} segments".format(filename, len(segments)))
     tycat(list(iterateur_quadratique),list(mon_graphe.vertices.keys()))
 
+#Modification
 
 def main():
     """
