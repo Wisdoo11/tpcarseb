@@ -22,6 +22,7 @@ def display(filename):
     tycat(list(iterateur_quadratique),list(mon_graphe.vertices.keys()))
     #tycat(list(mon_graphe.vertices.keys()))
 
+#Modification
 
 def main():
     """
