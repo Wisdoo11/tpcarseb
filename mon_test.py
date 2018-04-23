@@ -20,7 +20,6 @@ def display(filename):
     print(len(list(iterateur_hash)))
     print("{}: nous avons {} segments".format(filename, len(segments)))
     tycat(list(iterateur_quadratique),list(mon_graphe.vertices.keys()))
-    #tycat(list(mon_graphe.vertices.keys()))
 
 
 def main():

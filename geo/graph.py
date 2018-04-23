@@ -86,12 +86,12 @@ class Graph:
             table_hachage, collision = self.hasher(t)
             tables.append(table_hachage)
         for table_hachage in reversed(tables):
-            for elt in table_hachage:
-                for point_carre in elt.keys():
-                    n = len(list(elt.keys()))
+            for dico in table_hachage:
+                for point_carre in dico.keys():
+                    n = len(dico[point_carre])
                     for i in range(n):
                         for j in range(i+1, n):
-                            yield Segment([elt[point_carre][i], elt[point_carre][j]])
+                            yield Segment([dico[point_carre][i], dico[point_carre][j]])
 
     def construire_composante_connexe(self, comp_connexes, point, point_ref):
         comp_connexes.add(point)
