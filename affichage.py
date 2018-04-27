@@ -11,9 +11,9 @@ def display(filename):
     load segment file, get back connexity, get even degrees, display eulerian path.
     """
     segments = load_segments(filename)
-    print("{}: nous avons {} segments".format(filename, len(segments)))
     print(segments)
     tycat(segments)
+    print("{}: nous avons {} segments".format(filename, len(segments)))
 
 def main():
     """
